@@ -8,10 +8,16 @@ allg:
 - copyright
 - news  -> top of every page with teaser on index?
 - add game, in index or general
+- where add quote? The curious mind will find questions where answers were expected
+- html head + favicon
+- color landscape
+
+- add links to icons etc.
 
 - check: buy domain - url=? pricing, sec, etc.
 
 - later: nav with submenus?
+- later: printable
 
 
 index:

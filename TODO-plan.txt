@@ -3,6 +3,51 @@ color: #f56a6a;
 
 
 
+allg:
+- navigation responsive
+- copyright
+- news  -> top of every page with teaser on index?
+- add game, in index or general
+
+- check: buy domain - url=? pricing, sec, etc.
+
+- later: nav with submenus?
+
+
+index:
+- image responsive, wide
+
+- later: revise and reduce text
+- later: SM/SEO txts
+
+
+research:
+- Text about Current Research + Research Interest, goals
+- Research Papers -> dropdown box --> year, title<br />co-author, link (official); dropdown: small image, short text
+	-> first author paper hervorheben
+- conferences
+- collaborations
+- Research Projects
+	-> tbd new projects like PI etc
+	-> currently: msc & bsc projects (thesis), evt. from practical exp.  -->  1+ image, txt, link or doc
+- github?
+
+
+teaching & outreach
+- current projects 
+- list of projects --> dropdown incl. short text & download report
+- courses taught
+- Outreach -> mini-blog about outreach
+
+extra-curricular activities
+- use blog teaser -> new site
+
+- later: automatically display other blog teasers on detail site (under detail blog)
+
+
+ideas:
+- good server -> self-hosted, github implementation dort verknüpfen
+- code hosting on webpage
 
 
 

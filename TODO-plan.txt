@@ -1,0 +1,38 @@
+
+color: #f56a6a;
+
+
+
+
+
+
+Notes:
+
+"About” or “Home” page along with a page for your C.V. (w/ links!), another for Publications, and another for Teaching Materials.
+
+blog, pages for any digital projects you might be working on, and connections to social media sites -> social media yap, rest nope
+
+avoid posting your email address directly on your site (and be sure to remove it from your C.V.) as there’s a good chance that it will get picked up by spam bots and inundate your inbox. -> spam protect!
+
+where conferences, collaborations etc? -> research/science/teaching? -> teaching & projects?
+research projects // teaching // code // About me / CV // evt. hobbies etc
+
+showcase things outside normal application package 
+
+
+
+* A list of your publications with links to individual papers and your Google Scholar profile. You may also want to include plain language summaries of your work, so those outside of your field can understand what you’ve done
+* Other CV-type information such as your educational and work history
+* A statement of your research interests and goals
+* Your teaching portfolio and a statement of your teaching philosophy
+* Student evaluations of your teaching
+* Awards, honours, scholarships, and other achievements
+* Conference presentations, either embedded or listed
+* A list of lab or field techniques in which you have experience
+* Photos or videos documenting your academic life and work
+* Affiliations with scientific societies and other professional groups
+* Journals for whom you have served as a peer reviewer as well as other forms of service and outreach to the scientific community
+* A link to your blog, if it’s work-related, as well as links to LinkedIn, Academia.edu, and other academic social networks
+* A page about your lab and its members or a link to such a page on your institution’s website
+* Your contact information or, if you don’t wish to list your email address publicly, an embedded email form for those wishing to reach you
+http://blog.cdnsciencepub.com/how-to-create-a-professional-website-a-guide-for-academics/

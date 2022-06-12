@@ -5,7 +5,7 @@ color: #f56a6a;
 
 allg:
 - navigation responsive
-- copyright
+- copyright, add icons
 - news  -> top of every page with teaser on index?
 - add game, in index or general
 - where add quote? The curious mind will find questions where answers were expected

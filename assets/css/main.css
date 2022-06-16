@@ -1,65 +1,26 @@
+/**
+
+Editorial by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+Adapted by xebobytes
+
+ * @Date:   Thursday, April 28th 2022, 4:26:16 pm
+ * @Filename: main.css
+ * @Last modified by:   xebobytes
+ * @Last modified time: Thursday, June 16th 2022, 9:05:44 pm
+ */
+
+
+/* so far unused:
+    off
+
+*/
+
+
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
-/*
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-
-/*
-Colors
-  red: color: #f56a6a;
-  p: color: #63696d;
-  h1-h6: color: #3d4449; 
-  background: #ffffff;
-  sidebar: background-color: #f5f6f7; background-color: #eff1f2;
-  copyright: color: #8a8e91;
-  z.T. via rgba definiert wie z.B. nav: color: rgba(255, 255, 255, 0.75);
-*/
-
-.orig-theme {
-  --background-primary: #ffffff; /* header backgrounds */
-  --background-secondary: #f5f6f7;
-
-  --action-primary: #f56a6a; /* z.B. hover over button text */
-  --action-secondary: #f56a6a; /* z.B. 2nd button type */
-
-  --foreground-primary: #3d4449; /*h1-h4 */
-  --foreground-secondary: #63696d;
-  --foreground-tertiary: #8a8e91;
-
-  --accent: #f56a6a; /* links, buttons hover over */
-}
-
-.orig_typo {
-  --fs-base: 14pt; /* html font size */
-  --fs-1: 4em;
-  --fs-2: 1.75em;
-  --fs-3: 1.25em;
-  --fs-4: 1.1em;
-  --fs-5: 0.9em;
-  --fs-6: 0.7em;
-
-
-  --fs-w1680: 13pt;
-  --fs-w1280: 12pt;
-  --fs-w360: 10pt;
-
-  --fs-w1680-1: 3.5em;
-  --fs-w980-1: 3.25em;
-  --fs-w736-1: 2em;
-   
-  --fs-w736-2: 1.5em;
-
-  --fs-subp: 0.8em;
-  --fs-code-pre: 0.9em;
-  
-  /*font weight? 400 norm
-  line-height? 1.65 norm */
-  
-
-}
 
 
 html, body, div, span, applet, object,
@@ -92,7 +53,7 @@ ol, ul {
 
 blockquote, q {
   quotes: none; }
-  blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before, blockquote:after, q:before, q:after {
     content: '';
     content: none; }
 
@@ -148,8 +109,7 @@ body {
 
 /* Type */
 body, input, select, textarea {
-  /*color: #7f888f;*/
-  color: #63696d;
+  color: var(--color-foreground-secondary);
   font-family: "Open Sans", sans-serif;
   font-size: 14pt;
   font-weight: 400;
@@ -170,16 +130,19 @@ a {
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
-  color: #f56a6a;
+  color: var(--color-action-primary);
   text-decoration: none; }
   a:hover {
-    border-bottom-color: #f56a6a;
-    color: #f56a6a !important; }
+    border-bottom: 1px solid;
+    border-bottom-color: var(--color-action-primary);
+    color: var(--color-action-primary) !important; }
     a:hover strong {
       color: inherit; }
+  a:visited{
+    color: var(--color-accent); }
 
 strong, b {
-  color: #63696d;
+  color: var(--color-foreground-secondary);
   font-weight: 600; }
 
 em, i {
@@ -189,7 +152,7 @@ p {
   margin: 0 0 2em 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #3d4449;
+  color: var(--color-foreground-primary);
   font-family: "Roboto Slab", serif;
   font-weight: 700;
   line-height: 1.5;
@@ -200,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 0; }
 
 h1 {
-  font-size: 4em;
+  font-size: var(--fs-1); /*4em;*/
   margin: 0 0 0.5em 0;
   line-height: 1.3; }
 
@@ -245,15 +208,15 @@ sup {
   top: -0.5em; }
 
 blockquote {
-  border-left: solid 3px rgba(210, 215, 217, 0.75);
-  font-style: italic;
-  margin: 0 0 2em 0;
-  padding: 0.5em 0 0.5em 2em; }
+  border-left: solid 3px var(--color-block-border);
+  font-style: italitext-shadow: c;
+  margin: 0 0 2em text-shadow: 0;
+  padding: 0.5em 0 text-shadow: 0.5em 2em; text-shadow: }
 
 code {
-  background: rgba(230, 235, 237, 0.25);
+  background: var(--color-block-bg);
   border-radius: 0.375em;
-  border: solid 1px rgba(210, 215, 217, 0.75);
+  border: solid 1px var(--color-block-border);
   font-family: "Courier New", monospace;
   font-size: 0.9em;
   margin: 0 0.25em;
@@ -272,9 +235,9 @@ pre {
 
 hr {
   border: 0;
-  border-bottom: solid 1px rgba(210, 215, 217, 0.75);
+  border-bottom: solid 1px var(--color-block-border);
   margin: 2em 0; }
-  hr.major {
+hr.major {
     margin: 3em 0; }
 
 .align-left {
@@ -286,7 +249,10 @@ hr {
 .align-right {
   text-align: right; }
 
-/* Row */
+
+
+
+/* Row, responsive, with all margin possibilities*/
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -1042,11 +1008,16 @@ hr {
           margin-top: -3em; }
           .row.gtr-200.gtr-uniform > * {
             padding-top: 3em; } }
+/*row end*/
+
+
+
 
 /* Section/Article */
 section.special, article.special {
   text-align: center; }
 
+/*header*/
 header p {
   font-family: "Roboto Slab", serif;
   font-size: 1em;
@@ -1056,7 +1027,7 @@ header p {
   text-transform: uppercase; }
 
 header.major > :last-child {
-  border-bottom: solid 3px #f56a6a;
+  border-bottom: solid 3px var(--color-action-primary);
   display: inline-block;
   margin: 0 0 2em 0;
   padding: 0 0.75em 0.5em 0; }
@@ -1064,12 +1035,16 @@ header.major > :last-child {
 header.main > :last-child {
   margin: 0 0 1em 0; }
 
+
+
+
 /* Form */
 form {
   margin: 0 0 2em 0; }
 
+/*label - html tag used to label inputs (in forms etc), textarea, select or bars such as meter, progress*/
 label {
-  color: #3d4449;
+  color: var(--color-foreground-primary);
   display: block;
   font-size: 0.9em;
   font-weight: 600;
@@ -1114,8 +1089,8 @@ textarea {
   input[type="url"]:focus,
   select:focus,
   textarea:focus {
-    border-color: #f56a6a;
-    box-shadow: 0 0 0 1px #f56a6a; }
+    border-color: var(--color-action-primary);
+    box-shadow: 0 0 0 1px var(--color-action-primary); }
 
 select {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(210, 215, 217, 0.75)' /%3E%3C/svg%3E");
@@ -1719,8 +1694,8 @@ button.collapsible:hover {
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
-	
-	
+
+
 
 /* Features */
 .features {
@@ -2363,14 +2338,14 @@ button.collapsible:hover {
     /* background: #f0f0f0; */
     padding: 4em 0 6em 0;
     text-align: center;
-    border-top: solid 2px rgba(210, 215, 217, 0.75); 
+    border-top: solid 2px rgba(210, 215, 217, 0.75);
   }
     #footer .copyright {
     color: #8a8e91;
-    font-size: 0.9em; 
+    font-size: 0.9em;
     }
     #footer .copyright a {
-      color: inherit; 
+      color: inherit;
     }
     #footer .copyright li {
       border-left: solid 1px #dddddd;
@@ -2385,7 +2360,7 @@ button.collapsible:hover {
         margin-left: 0;
         padding-left: 0;
       }
-  
+
 
 
 
@@ -2562,7 +2537,7 @@ button.collapsible:hover {
 					}
 
 					#titleBar .toggle:before {
-						background: #ffffff; 
+						background: #ffffff;
 					  color: #3d4449; /*	color: rgba(255, 255, 255, 0.5); */
 						content: '\f0c9';
 						display: block;
@@ -2590,7 +2565,7 @@ button.collapsible:hover {
 						width: 54px;
 					}
 */
-          
+
 
 			#navPanel {
 				-moz-backface-visibility: hidden;
@@ -2616,7 +2591,7 @@ button.collapsible:hover {
 				z-index: 10002;
 				background: #181920;
 				padding: 3.4em 2.5em 2.5em 2.5em; /*padding: 0.75em 1.25em;*/
-        
+
         /* neu */
         font-size: 24px;
         text-align: center;

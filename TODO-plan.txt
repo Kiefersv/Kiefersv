@@ -1,23 +1,20 @@
 @Author: xebobytes
 @Date:   Saturday, June 11th 2022, 10:00:54 am
 @Filename: TODO-plan.txt
-@Last modified by:   xebobytes
-@Last modified time: Thursday, June 16th 2022, 9:08:15 pm
-
-
-
-color: #f56a6a;
+@Last modified by:
+@Last modified time: Sunday, July 3rd 2022, 4:32:19 pm
 
 
 
 allg:
 - navigation responsive
-- copyright, add icons
+- copyright (responsive -> php?), add icons
 - news  -> top of every page with teaser on index?
-- add game, in index or general
 - where add quote? The curious mind will find questions where answers were expected
 - html head + favicon
 - color landscape
+- change dropdowns/collapsibles + alternative for first author paper (hervorheben)
+- E-Mail spam protect
 
 - add links to icons etc.
 
@@ -25,7 +22,12 @@ allg:
 
 - later: nav with submenus?
 - later: printable
-<!-- dark mode definieren! -->
+- later: add game, in index or general
+- later: pallax?
+- later: include html -> for ex with php or javascript (so that texts only once for multiple sites -> how is with SEO?)
+https://css-tricks.com/the-simplest-ways-to-handle-html-includes/
+https://www.w3schools.com/howto/howto_html_include.asp
+- dark mode definieren
 <!-- padding rechts links wie ca. bei 50% -->
 
 
@@ -38,8 +40,6 @@ index:
 
 research:
 - Text about Current Research + Research Interest, goals
-- Research Papers -> dropdown box --> year, title<br />co-author, link (official); dropdown: small image, short text
-	-> first author paper hervorheben
 - conferences
 - collaborations
 - Research Projects
@@ -96,3 +96,15 @@ showcase things outside normal application package
 * A page about your lab and its members or a link to such a page on your institution’s website
 * Your contact information or, if you don’t wish to list your email address publicly, an embedded email form for those wishing to reach you
 http://blog.cdnsciencepub.com/how-to-create-a-professional-website-a-guide-for-academics/
+
+
+
+
+media query: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+bootstraps: https://www.w3schools.com/bootstrap/bootstrap_ver.asp
+screen sizes: https://viewportsizer.com/phone-screen-dimensions/
+button design best practices: https://balsamiq.com/learn/articles/button-design-best-practices/
+relative lengths: https://www.w3schools.com/cssref/css_units.asp
+pure css parallax: https://keithclark.co.uk/articles/pure-css-parallax-websites/
+https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
+https://stackoverflow.com/questions/29240028/css-make-a-background-image-scroll-slower-than-everything-else

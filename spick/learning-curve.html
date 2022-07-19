@@ -1,0 +1,341 @@
+
+<!-- Overflow: default = visible; want: hidden or auto (scroll); https://www.w3schools.com/cssref/tryit.asp?filename=trycss_overflow  -->
+
+<!-- ================================================== -->
+
+<!-- Text Overflow: clip = default (just cuts) -->
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.b {
+  white-space: nowrap;
+  width: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid #000000;
+}
+
+div.c {
+  white-space: nowrap;
+  width: 50px;
+  overflow: hidden;
+  text-overflow: "-------";
+  border: 1px solid #000000;
+}
+
+</style>
+</head>
+<body>
+
+<h2>text-overflow: ellipsis:</h2>
+<div class="b">Hello world!</div>
+
+<h2>text-overflow: "----" (user defined string):</h2>
+<div class="c">Hello world!</div>
+
+</body>
+</html>
+
+-->
+
+<!-- ================================================== -->
+<!-- ================================================== -->
+
+<!-- Object Position (image focus) -->
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img.a {
+  width: 50%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 10%;
+  border: 1px solid red;
+}
+</style>
+</head>
+<body>
+
+<h2>The object-position Property</h2>
+
+<p>Resize the image to fit its content box, and position the image in the middle and 10% from the top inside the content box:</p>
+<img class="a" src="paris.jpg" alt="Paris" width="400" height="300">
+
+<h2>Original image:</h2>
+<img src="paris.jpg" alt="Paris" width="400" height="300">
+
+<p>Note: The object-position and object-fit properties are not supported in Internet Explorer/Edge 15 or earlier.</p>
+
+</body>
+</html>
+-->
+<!-- ================================================== -->
+<!-- ================================================== -->
+
+
+<!-- hover -->
+
+<!--
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_hover
+-->
+
+<!--
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+	width: 100%;
+}
+
+.img-move:hover {
+  transform: scale(1.120) translateY(10px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.img-div{
+    overflow: hidden;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Demo of the :hover selector</h1>
+
+<p>The :hover selector style links on mouse-over:</p>
+<div class="img-div">
+<img class="img-move" src="https://gelesi.de/wp-content/uploads/2017/10/Eierkuchen-Pfannkuchen-selber-machen.jpg" alt="Eierkuchen">
+</div>
+
+</body>
+</html>
+
+
+-->
+
+<!-- ================================================== -->
+
+<!-- Dropdown Link upon hover
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_hover_dropdown
+-->
+
+<!-- ================================================== -->
+<!-- ================================================== -->
+
+<!-- Select descendants -->
+
+<!--
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*div p {
+  background-color: yellow;
+}
+*/
+div ul li a {
+  background-color: green;
+}
+</style>
+</head>
+<body>
+
+<h2>Descendant Selector</h2>
+
+<p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section><p>Paragraph 3 in the div.</p></section>
+</div>
+
+<div>
+  <ul>
+  	<li>paragraph <a href="https://www.w3schools.com">in list in div</a></li>
+  </ul>
+  <section><p>Paragraph 3 in the div.</p>
+    <ul>
+      <li>paragraph <a href="https://www.w3schools.com">in list in section in div</a></li>
+    </ul>
+  </section>
+  <p>only paragraph <a href="https://www.w3schools.com">in div</a></p>
+
+</div>
+
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+</body>
+</html>
+
+<!-- ================================================== -->
+
+<!-- Select Adjacent Sibling -->
+
+<!--
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div + p {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>Adjacent Sibling Selector</h2>
+
+<p>The + selector is used to select an element that is directly after another specific element.</p>
+<p>The following example selects the first p element that are placed immediately after div elements:</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. After a div.</p>
+<p>Paragraph 4. After a div.</p>
+
+<div>
+  <p>Paragraph 5 in the div.</p>
+  <p>Paragraph 6 in the div.</p>
+</div>
+
+<p>Paragraph 7. After a div.</p>
+<p>Paragraph 8. After a div.</p>
+
+</body>
+</html>
+
+
+-->
+
+
+<!-- ================================================== -->
+
+<!-- Select Classes -->
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.hometown.sui {
+  background: yellow;
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of the .class selector</h1>
+
+<p>My name is Donald.</p>
+<p class="hometown">I live in Ducksburg.</p>
+<p class="sui">yap</p>
+
+<p>My name is Dolly.</p>
+<p class="sui hometown">I also live in Ducksburg.</p>
+
+</body>
+</html>
+
+-->
+
+<!-- ================================================== -->
+<!-- ================================================== -->
+
+<!-- Flex shrink & grow-->
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#main {
+  width: 350px;
+  height: 100px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+}
+
+#main div {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100px;
+}
+
+#main div:nth-of-type(2) {
+  flex-shrink: 3;
+}
+</style>
+</head>
+<body>
+
+<h1>The flex-shrink Property</h1>
+
+<div id="main">
+  <div style="background-color:coral;"></div>
+  <div style="background-color:lightblue;"></div>
+  <div style="background-color:khaki;"></div>
+  <div style="background-color:pink;"></div>
+  <div style="background-color:lightgrey;"></div>
+</div>
+
+<p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the flex-shrink property.</p>
+
+</body>
+</html>
+-->
+
+<!--
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#main {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+}
+
+
+#main div:nth-of-type(1) {flex-grow: 1; flex-shrink: 1; width: 50%;}
+#main div:nth-of-type(2) {flex-grow: 0; flex-shrink: 0; width: 50%;}
+
+/*
+#main div:nth-of-type(3) {flex-grow: 1;}
+#main div:nth-of-type(4) {flex-grow: 1;}
+#main div:nth-of-type(5) {flex-grow: 1;}
+*/
+</style>
+</head>
+<body>
+
+<h1>The flex-grow Property</h1>
+
+<div id="main">
+  <div style="background-color:coral;"></div>
+  <div style="background-color:lightblue;"></div>
+</div>
+
+<p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the flex-grow property.</p>
+
+</body>
+</html>
+
+-->

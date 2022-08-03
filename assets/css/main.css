@@ -9,7 +9,7 @@ Adapted by xebobytes
  * @Date:   Thursday, April 28th 2022, 4:26:16 pm
  * @Filename: main.css
  * @Last modified by:
- * @Last modified time: Tuesday, August 2nd 2022, 7:01:58 pm
+ * @Last modified time: Wednesday, August 3rd 2022, 5:38:48 pm
  */
 
 
@@ -1181,6 +1181,16 @@ input[type="radio"] {
     border-color: var(--color-action-primary);
     box-shadow: 0 0 0 1px var(--color-action-primary); }
 
+  /* Navigation: btn & checkbox (before) not showing */
+  input[type="checkbox"] + label.checkbtn{
+      display: none;
+      font-size: 2em;
+      line-height: 1em;
+  }
+  input[type="checkbox"] + label.checkbtn::before{
+      display: none;
+  }
+
 input[type="checkbox"] + label:before {
   border-radius: 0.375em; }
 
@@ -1223,7 +1233,7 @@ input[type="radio"] + label:before {
 
 
 
-/* Icons (ul icons have additional rules farther down) */
+/* Icon (ul icons have additional rules farther down) */
 .icon {
   text-decoration: none;
   border-bottom: none;
@@ -1391,16 +1401,18 @@ ul.icons {
   cursor: default;
   list-style: none;
   padding-left: 0;
+  white-space: nowrap;
   }
   ul.icons li {
     display: inline-block;
-    padding: 0 1em 0 0; }
+    padding: 0 1em 0 0;
+    line-height: 1em;}
     ul.icons li:last-child {
       padding-right: 0; }
     ul.icons li .icon {
       color: inherit; }
       ul.icons li .icon:before {
-        font-size: 1.25em; }
+        font-size: 1.5em; }
 
 
 /* Contact */
@@ -2066,90 +2078,120 @@ button.collapsible:hover {
   display: -ms-flex;
   display: flex;
   border-bottom: solid 5px var(--color-action-primary);
-  padding: 6em 0 1em 0;
-  position: relative;
-
-  /* TODO: added for navigation */
+  /*position: relative;*/
+  margin: 4.5em 0 1em 0;
+  width: 100%;
+}
+/* TODO: added for navigation */
+/*
+nav[id="header"]  {
   list-style: none;
   box-sizing: border-box;
   background: var(--color-background-primary)
   height: 80px;
   width: 100%;
 }
+*/
   #header > * {
-    -moz-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    margin-bottom: 0; }
-  #header .logo {
-    border-bottom: 0;
-    color: inherit;
-    font-family: "Roboto Slab", serif;
-    font-size: 1.125em; }
+    -moz-flex: auto;
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    margin-bottom: 0em;
+    /*background: var(--color-background-primary);*/ }
   #header .icons {
-    text-align: left; }
-  @media screen and (max-width: 1680px) {
-    #header {
-      padding-top: 5em; } }
-  @media screen and (max-width: 736px) {
-    #header {
-      padding-top: 6.5em; }
-      #header .logo {
-        font-size: 1.25em;
-        margin: 0; }
-      #header .icons {
-        height: 5em;
-        line-height: 5em;
-        position: absolute;
-        right: -0.5em;
-        top: 0; } }
+    text-align: left;}
 
 
 /* NEW NAVIGATION / MENU */
 /* TODO */
 nav {
-    /*text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
 
-    background: var(--color-background-primary)
-    */
 }
     nav ul {
         float: right;
-        margin-right: 1em;
-
+        /* white-space: nowrap; */
+        /*margin-right: 1em;*/
     }
     nav ul li {
         display: inline-block;
-        line-height: 1rem;
+        line-height: 1em;
         margin: 0 0.3rem;
     }
     nav ul li a {
         font-size: 1.2rem;
         padding: 0.3rem .5rem;
         border-radius: 0.3rem;
+        border-bottom: none;
+        /*text-transform: uppercase;*/
     }
-    a.active, a:hover {
-        background: var(--color-background-secondary)
-        /*transition: 0.5s;*/
+    nav ul li a.active, nav ul li a:hover {
+        background: var(--color-background-secondary);
+        transition: 0.2s;
+        border-bottom: none;
     }
     .checkbtn {
-        /*
-        font-size: 1rem;
-        color: var(--color-foreground-primary)
-        line-height: 1rem;
-        */
         float: right;
-        margin-right: 3em;
         cursor: pointer;
     }
     #nav-check {
         display: none;
     }
 
-    /* https://www.youtube.com/watch?v=oLgtucwjVII bis 4:43min */
+
+    @media screen and (max-width: 1680px) {
+      #header {
+        margin-top: 3.5em; } }
+    @media screen and (max-width: 1250px) {
+        input[type="checkbox"] + label.checkbtn{
+            display: block;
+            position: relative;
+            z-index:3;
+          }
+        nav ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: var(--color-action-primary);
+            top: 0;
+            left: 0;
+            text-align: center;
+            display: none;
+            transition: all .5s;
+        }
+        nav ul li {
+            display: block;
+            float: none;
+            line-height: 4em;
+            margin: 1.5em;
+        }
+        nav ul li:first-child{
+            margin-top: 6em;
+        }
+        nav ul li a {
+            font-size: 2rem;
+            color: white;
+        }
+        nav ul li a.active, nav ul li a:hover {
+            background: none;
+            border-bottom: none;
+            color: var(--color-action-lighter) !important;
+        }
+
+        #nav-check:checked ~ ul {
+            display: block;
+        }
+        #nav-check:checked ~ input[type="checkbox"] + label.checkbtn {
+            color: white;
+        }
+    }
+    @media screen and (max-width: 736px) {
+      #header {
+        margin-top: 5em; }
+      }
+
+
+    /* https://www.youtube.com/watch?v=oLgtucwjVII */
 
 
 

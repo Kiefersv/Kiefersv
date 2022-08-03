@@ -9,7 +9,7 @@ Adapted by xebobytes
  * @Date:   Thursday, April 28th 2022, 4:26:16 pm
  * @Filename: main.css
  * @Last modified by:
- * @Last modified time: Wednesday, August 3rd 2022, 5:38:48 pm
+ * @Last modified time: Wednesday, August 3rd 2022, 5:51:45 pm
  */
 
 
@@ -249,7 +249,10 @@ hr.major {
 .align-right {
   text-align: right; }
 
+.hidden {
+    transform: scale(0);
 
+}
 
 
 /* Row, responsive, with all margin possibilities*/
@@ -2082,16 +2085,6 @@ button.collapsible:hover {
   margin: 4.5em 0 1em 0;
   width: 100%;
 }
-/* TODO: added for navigation */
-/*
-nav[id="header"]  {
-  list-style: none;
-  box-sizing: border-box;
-  background: var(--color-background-primary)
-  height: 80px;
-  width: 100%;
-}
-*/
   #header > * {
     -moz-flex: auto;
     -webkit-flex: auto;
@@ -2191,7 +2184,8 @@ nav {
       }
 
 
-    /* https://www.youtube.com/watch?v=oLgtucwjVII */
+    /* based on https://www.youtube.com/watch?v=oLgtucwjVII
+    /* check out: https://www.youtube.com/watch?v=8QKOaTYvYUA */
 
 
 

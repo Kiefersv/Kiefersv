@@ -9,7 +9,7 @@ Adapted by xebobytes
  * @Date:   Thursday, April 28th 2022, 4:26:16 pm
  * @Filename: main.css
  * @Last modified by:
- * @Last modified time: Wednesday, August 3rd 2022, 5:51:45 pm
+ * @Last modified time: Thursday, August 4th 2022, 12:59:41 pm
  */
 
 
@@ -124,6 +124,7 @@ body, input, select, textarea {
     body, input, select, textarea {
       font-size: 10pt; } }
 
+/* Links */
 a {
   -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
@@ -139,7 +140,13 @@ a {
     a:hover strong {
       color: inherit; }
   a:visited{
-    color: var(--color-accent); }
+    color: var(--color-action-primary); }
+  a.lineless {
+        border-bottom: none;
+  }
+  a.colorless, a.colorless:visited, a.colorless:hover, a.colorless:hover strong {
+      color: inherit;
+  }
 
 strong, b {
   color: var(--color-foreground-secondary);
@@ -1189,6 +1196,7 @@ input[type="radio"] {
       display: none;
       font-size: 2em;
       line-height: 1em;
+      padding-right: 0;
   }
   input[type="checkbox"] + label.checkbtn::before{
       display: none;
@@ -1416,6 +1424,9 @@ ul.icons {
       color: inherit; }
       ul.icons li .icon:before {
         font-size: 1.5em; }
+    ul.icons li a:hover {
+        border-bottom: none;
+    }
 
 
 /* Contact */
@@ -1815,7 +1826,8 @@ button.collapsible:hover {
       width: 100%; }
       .features article .content > :last-child {
         margin-bottom: 0; }
-  @media screen and (max-width: 980px) {
+  /* prev 980px */
+  @media screen and (max-width: 1200px) {
     .features {
       margin: 0 0 2em 0;
       width: 100%; }
@@ -2007,7 +2019,7 @@ button.collapsible:hover {
   width: 100%; }
   #main > .inner {
     padding: 0 9em 0.1em 9em ;
-    margin: 0 auto;
+    margin: 0; /* TODO before: margin: 0, auto; */
     max-width: 110em; }
     #main > .inner > section {
       padding: 6em 0 4em 0 ;
@@ -2021,7 +2033,7 @@ button.collapsible:hover {
         padding: 5em 0 3em 0 ; } }
   @media screen and (max-width: 1280px) {
     #main > .inner {
-      padding: 0 7em 0.1em 7em ; }
+      padding: 0 7rem 0.1em 7em ; }
       #main > .inner > section {
         padding: 4em 0 2em 0 ; } }
   @media screen and (max-width: 736px) {
@@ -2103,6 +2115,7 @@ nav {
 }
     nav ul {
         float: right;
+        z-index:995;
         /* white-space: nowrap; */
         /*margin-right: 1em;*/
     }
@@ -2114,21 +2127,26 @@ nav {
     nav ul li a {
         font-size: 1.2rem;
         padding: 0.3rem .5rem;
-        border-radius: 0.3rem;
+        /*border-radius: 0.3rem;*/
         border-bottom: none;
+        color: var(--color-foreground-primary) !important;
         /*text-transform: uppercase;*/
     }
     nav ul li a.active, nav ul li a:hover {
-        background: var(--color-background-secondary);
+        /*background: var(--color-background-secondary);*/
+        color: var(--color-action-primary) !important;
         transition: 0.2s;
         border-bottom: none;
     }
     .checkbtn {
         float: right;
-        cursor: pointer;
+        z-index:999;
     }
     #nav-check {
         display: none;
+    }
+    .closing {
+        transform: scale(0);
     }
 
 
@@ -2136,11 +2154,6 @@ nav {
       #header {
         margin-top: 3.5em; } }
     @media screen and (max-width: 1250px) {
-        input[type="checkbox"] + label.checkbtn{
-            display: block;
-            position: relative;
-            z-index:3;
-          }
         nav ul {
             position: fixed;
             width: 100%;
@@ -2161,27 +2174,51 @@ nav {
         nav ul li:first-child{
             margin-top: 6em;
         }
-        nav ul li a {
-            font-size: 2rem;
-            color: white;
+        nav ul li a, nav ul li a:visited {
+            font-size: 2.5rem;
+            color: var(--color-background-primary) !important;
         }
+        /* TODO get rid of important? see a:hover farther up also with !important */
         nav ul li a.active, nav ul li a:hover {
-            background: none;
+            /*background: none;*/
             border-bottom: none;
             color: var(--color-action-lighter) !important;
         }
 
+        input[type="checkbox"] + label.checkbtn{
+            display: block;
+              }
         #nav-check:checked ~ ul {
             display: block;
         }
-        #nav-check:checked ~ input[type="checkbox"] + label.checkbtn {
-            color: white;
+        /*
+        #nav-check:checked ~ .checkbtn {
+            color: var(--color-background-primary);
+            position: fixed;
+            right: 7rem;
+        }*/
+        #nav-check:checked ~ .checkbtn .opening {
+            transform: scale(0);
+        }
+        #nav-check:checked ~ .checkbtn .closing {
+            color: var(--color-background-primary);
+            position: fixed;
+            right: 7rem;
+            transform: rotate(45deg) scale(200%);
         }
     }
     @media screen and (max-width: 736px) {
       #header {
         margin-top: 5em; }
+      nav ul li:first-child{
+        margin-top: 11em;
       }
+    /*
+      #nav-check:checked ~ .checkbtn {
+        right: calc(50% - 1em);
+      }
+    */
+    }
 
 
     /* based on https://www.youtube.com/watch?v=oLgtucwjVII

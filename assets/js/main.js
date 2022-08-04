@@ -1,3 +1,11 @@
+/**
+ * @Date:   Thursday, April 28th 2022, 4:26:16 pm
+ * @Filename: main.js
+ * @Last modified time: Thursday, August 4th 2022, 8:19:47 am
+ */
+
+
+
 /*
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
@@ -29,14 +37,15 @@
 
 
 
+/*
 	// Nav.
 
 		// Title Bar.
 		$(
 			'<div id="titleBar">' +
 				'<a href="#navPanel" class="toggle"></a>' +
-				/* '<span class="title">' + $('#logo').html() + '</span>' + */ //bc no logo
-				
+				// '<span class="title">' + $('#logo').html() + '</span>' +  //bc no logo
+
 			'</div>'
 		)
 			.appendTo($body);
@@ -64,6 +73,7 @@
 
 
 
+*/
 
 
 
@@ -71,7 +81,6 @@
 
 
 
-			
 	// Stops animations/transitions until the page has ...
 
 		// ... loaded.
@@ -119,6 +128,7 @@
 
 				});
 
+/*
 	// Sidebar.
 		var $sidebar = $('#sidebar'),
 			$sidebar_inner = $sidebar.children('.inner');
@@ -309,7 +319,7 @@
 
 			});
 
-
+*/
 
 	// collapsible elements
 		var coll = document.getElementsByClassName("collapsible");
@@ -323,7 +333,7 @@
 			  content.style.maxHeight = null;
 			} else {
 			  content.style.maxHeight = content.scrollHeight + "px";
-			} 
+			}
 		  });
 		}
 
@@ -331,7 +341,7 @@
 	// footer copyright
 	// how add to site? last line should help
 
-	/* 
+	/*
 	var date = new Date();
 	var year = date.getFullYear();
 	document.getElementById('copyright').innerHTML(year);

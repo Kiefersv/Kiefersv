@@ -3,7 +3,7 @@
  * @Date:   Thursday, June 16th 2022, 6:49:10 pm
  * @Filename: color-themes.css
  * @Last modified by:
- * @Last modified time: Wednesday, June 22nd 2022, 3:07:54 pm
+ * @Last modified time: Friday, August 5th 2022, 5:45:29 pm
  */
 
 
@@ -15,12 +15,12 @@
 
 
     --fs-base: 14pt; /* html font size -> body, input, select, textare */
-    --fs-1: 4em; /*h1*/
-    --fs-2: 1.75em; /*h2*/
-    --fs-3: 1.25em; /*h3*/
-    --fs-4: 1.1em; /*h4*/
-    --fs-5: 0.9em; /*h5*/
-    --fs-6: 0.7em; /*h6*/
+    --fs-1: 3.5em; /*h1*/  /* 4em, up to 1680px 3.5em, up to 980px 3.25, up to 736px 2em line-height 1.4 */
+    --fs-2: 1.75em; /*h2*/  /* 1.75em, up to 736px 2em line-height 1.4  */
+    --fs-3: 1.5em; /*h3*/  /* 1.25em */
+    --fs-4: 1.25em; /*h4*/  /* 1.1em */
+    --fs-5: 1.1em; /*h5*/  /* 0.9em */
+    --fs-6: 1em; /*h6*/  /* 0.7em */
 
     --fs-base-w1680: 13pt; /**/
     --fs-base-w1280: 12pt; /**/

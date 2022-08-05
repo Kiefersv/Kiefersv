@@ -9,7 +9,7 @@ Adapted by xebobytes
  * @Date:   Thursday, April 28th 2022, 4:26:16 pm
  * @Filename: main.css
  * @Last modified by:
- * @Last modified time: Friday, August 5th 2022, 5:58:29 pm
+ * @Last modified time: Friday, August 5th 2022, 7:21:51 pm
  */
 
 
@@ -215,10 +215,10 @@ sup {
   top: -0.5em; }
 
 blockquote {
-  border-left: solid 3px var(--color-block-border);
-  font-style: italitext-shadow: c;
-  margin: 0 0 2em text-shadow: 0;
-  padding: 0.5em 0 text-shadow: 0.5em 2em; text-shadow: }
+border-left: solid 3px rgba(210, 215, 217, 0.75);
+font-style: italic;
+margin: 0 0 2em 0;
+padding: 0.5em 0 0.5em 2em; }
 
 code {
   background: var(--color-block-bg);
@@ -365,7 +365,7 @@ hr.major {
     margin-top: 0;
     margin-left: -1.5em; }
     .row > * {
-      padding: 0 0 0 1.5em; }
+      padding: 0 0 0 1.5em; } /* TODO change so that more padding between -> can't here bc otherwise more padding for all so also on first (left on screen) */
     .row.gtr-uniform {
       margin-top: -1.5em; }
       .row.gtr-uniform > * {
@@ -491,7 +491,7 @@ hr.major {
         margin-top: 0;
         margin-left: -1.5em; }
         .row > * {
-          padding: 0 0 0 1.5em; }
+          padding: 0 0 0 4em; }
         .row.gtr-uniform {
           margin-top: -1.5em; }
           .row.gtr-uniform > * {
@@ -1695,7 +1695,7 @@ button.collapsible {
   /*letter-spacing: 0.075em;*/
   line-height: 1.65; /*3.5em*/
   outline: none;
-  padding: 18px; /*0 2.25em;*/
+  padding: 1.2em; /*0 2.25em; oder 18px*/
   text-align: left;/*center*/
   text-decoration: none;
   text-transform: none; /*uppercase*/
@@ -1703,18 +1703,20 @@ button.collapsible {
   width: 100%;
   vertical-align: middle;
 }
+    button.collapsible:hover {
+    	background-color: var(--color-background-tertiary); /* #f1f1f1 */
+    }
 
-button.collapsible:hover {
-	background-color: var(--color-background-tertiary); /* #f1f1f1 */
-}
-
-.collapsible-content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: var(--color-background-secondary); /* #f7f7f7 */
-}
+    .collapsible-content {
+      padding: 0 1.2em; /* TODO would need to adjust javascript to add padding to top (otherwise shows) */
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: var(--color-background-secondary); /* #f7f7f7 */
+    }
+    .collapsible-content:last-of-type{
+        margin-bottom: 3em;
+    }
 
 
 /*currently not used -> in case want ul/li or div*/
@@ -1722,7 +1724,7 @@ button.collapsible:hover {
 .collapsible-title{
 	display: inline-block;
     list-style-type: none;
-	padding-right: 20px;
+	padding-right: 1.4em;
 }
 
 /* ----------------------- end TODO  ----------------------- */

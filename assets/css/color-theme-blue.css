@@ -1,0 +1,58 @@
+/**
+ * @Author: xebobytes
+ * @Date:   Thursday, June 16th 2022, 6:49:10 pm
+ * @Filename: color-themes.css
+ * @Last modified by:
+ * @Last modified time: Friday, August 5th 2022, 6:47:29 pm
+ */
+
+ /*done up to line 1980*/
+
+ :root { /* orig */
+    /* orig color theme */
+    --color-background-primary: #ffffff; /* header backgrounds */
+    --color-background-secondary: #f5f6f7; /* collapsibles bc block-bg not dark enough to see well, etc. */
+    --color-background-tertiary: #eff1f2; /* hover over collapsibles, alternative sidebar background (#sidebar > .inner > .alt) */
+    --color-background-quartenary: rgba(222, 225, 226, 0.75); /* only background sidebar after .toggle */
+
+    --color-placeholder: #9fa3a6; /* only ::-xx-placeholder + in menu .opener:before & in menu ul>li>ul */
+
+    --color-transparent: rgba(255, 255, 255, 0); /* only used in sidebar */
+    --color-shadow: rgba(0, 0, 0, 0.175); /* only sidebar box-shadow */
+
+
+    --color-action-primary:   #3370cc; /* #1f4e93 #0047b3 #272778 z.B. button, focus in form, links etc.;#3f8cb4  #204578 rgba(79, 127, 248, 1); */
+    --color-action-lighter: #0066ff;    /*#6c94f9 pagination */
+    --color-action-darker: #3b70f7;    /* pagination */
+
+    --color-action-hover: rgba(51, 112, 204, 0.05); /* rgba(245, 106, 106, 0.05) button hover - lighter version of primary action color (most alpha) */
+    --color-action-active: rgba(51, 112, 204, 0.15); /*  rgba(245, 106, 106, 0.15) button active - lighter version of primary action color (more alpha) */
+
+    --color-foreground-primary: #3d4449; /*h1-h4 */
+    --color-foreground-secondary: #63696d; /*body, input, select, textarea, radio/checkbox,      orig: #7f888f*/
+    --color-foreground-tertiary: #8a8e91; /* footer */
+
+
+    --color-block-border: rgba(210, 215, 217, 0.75); /* blockquote & code border, hr, borders in forms, border of box and list and other borders; also post background */
+    --color-block-bg: rgba(230, 235, 237, 0.25); /*code background, part of table background */
+ }
+
+/* suggested:
+
+--color-action-secondary    z.B. 2nd button type
+--color-accent    hover over buttons or visited links
+
+*/
+
+
+
+ /*
+ Colors
+   red: color: #f56a6a;
+   p: color: #63696d;
+   h1-h6: color: #3d4449;
+   background: #ffffff;
+   sidebar: background-color: #f5f6f7; background-color: #eff1f2;
+   copyright: color: #8a8e91;
+   z.T. via rgba definiert wie z.B. nav: color: rgba(255, 255, 255, 0.75);
+ */

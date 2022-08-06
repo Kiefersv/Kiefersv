@@ -9,7 +9,7 @@ Adapted by xebobytes
  * @Date:   Thursday, April 28th 2022, 4:26:16 pm
  * @Filename: main.css
  * @Last modified by:
- * @Last modified time: Friday, August 5th 2022, 7:21:51 pm
+ * @Last modified time: Friday, August 5th 2022, 7:59:57 pm
  */
 
 
@@ -1026,6 +1026,7 @@ hr.major {
 /* Section/Article */
 section.special, article.special {
   text-align: center; }
+
 
 /*header*/
 header p {

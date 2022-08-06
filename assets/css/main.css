@@ -9,7 +9,7 @@ Adapted by xebobytes
  * @Date:   Thursday, April 28th 2022, 4:26:16 pm
  * @Filename: main.css
  * @Last modified by:
- * @Last modified time: Friday, August 5th 2022, 7:59:57 pm
+ * @Last modified time: Saturday, August 6th 2022, 4:42:46 pm
  */
 
 
@@ -257,9 +257,14 @@ hr.major {
   text-align: right; }
 
 .hidden {
-    transform: scale(0);
-
+    /*transform: scale(0);*/
+    position: absolute;
+    left: -999px;
 }
+  .hidden:focus {
+    position: inherit;
+    left: inherit;
+  }
 
 
 /* Row, responsive, with all margin possibilities*/
@@ -1522,7 +1527,9 @@ ul.pagination {
 /* Table */
 .table-wrapper {
   -webkit-overflow-scrolling: touch;
-  overflow-x: auto; }
+  overflow-x: auto;
+  margin: 0 0 3em 0;
+}
 
 table {
   margin: 0 0 2em 0;
@@ -1533,8 +1540,13 @@ table {
     border-right: 0; }
     table tbody tr:nth-child(2n + 1) {
       background-color: var(--color-block-bg); }
-  table td style="padding: 8px 30px;" { /* TODO sinnvoll gelöst? */
+  table td { /* TODO newly added :) */
+      padding: 0 1.5em 0 0;
+  }
+  /* TODO chabis */
+  /*table td style="padding: 8px 30px;" {
     padding: 0.75em 0.75em; }
+    */
   table th {
     color: var(--color-foreground-primary);
     font-size: 0.9em;
@@ -2162,31 +2174,35 @@ nav {
             position: fixed;
             width: 100%;
             height: 100vh;
-            background-color: var(--color-action-primary);
+            background-color: var(--color-action-darker);
             top: 0;
             left: 0;
             text-align: center;
             display: none;
             transition: all .5s;
+            overflow: auto;
         }
         nav ul li {
             display: block;
             float: none;
-            line-height: 4em;
-            margin: 1.5em;
+            line-height: 1.6; /*4em;*/
+            margin: calc((100vh - 11em) / 10)  1.5em; /*1.5em;*/
         }
         nav ul li:first-child{
-            margin-top: 6em;
+            margin-top: 11em; /* or 6em*/
+        }
+        nav ul li:last-child{
+            margin-bottom: 6em;
         }
         nav ul li a, nav ul li a:visited {
-            font-size: 2.5rem;
+            font-size: 2em;
             color: var(--color-background-primary) !important;
         }
         /* TODO get rid of important? see a:hover farther up also with !important */
         nav ul li a.active, nav ul li a:hover {
             /*background: none;*/
             border-bottom: none;
-            color: var(--color-action-lighter) !important;
+            color: var(--color-action-light) !important;
         }
 
         input[type="checkbox"] + label.checkbtn{
@@ -2207,16 +2223,25 @@ nav {
         #nav-check:checked ~ .checkbtn .closing {
             color: var(--color-background-primary);
             position: fixed;
-            right: 7rem;
+            right: 7.5rem;
             transform: rotate(45deg) scale(200%);
+            
         }
     }
     @media screen and (max-width: 736px) {
       #header {
         margin-top: 5em; }
+      #nav-check:checked ~ .checkbtn .closing {
+        right: 2.5rem;
+      }
+    /*
       nav ul li:first-child{
         margin-top: 11em;
       }
+      nav ul li {
+          margin: calc((100vh - 11em) / 10) 1.5em;
+      }
+    */
     /*
       #nav-check:checked ~ .checkbtn {
         right: calc(50% - 1em);
@@ -2346,3 +2371,9 @@ nav {
         margin-left: 0;
         padding-left: 0;
       }
+
+
+/* General Wrapper */
+  .group-wrapper {
+      margin: 0 0 3em 0;
+  }

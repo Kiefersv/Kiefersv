@@ -9,7 +9,7 @@ Adapted by xebobytes
  * @Date:   Thursday, April 28th 2022, 4:26:16 pm
  * @Filename: main.css
  * @Last modified by:
- * @Last modified time: Saturday, August 6th 2022, 4:42:46 pm
+ * @Last modified time: Saturday, August 6th 2022, 5:44:40 pm
  */
 
 
@@ -2225,7 +2225,6 @@ nav {
             position: fixed;
             right: 7.5rem;
             transform: rotate(45deg) scale(200%);
-            
         }
     }
     @media screen and (max-width: 736px) {

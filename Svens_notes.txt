@@ -2,3 +2,9 @@ Title: Spectral and angular differential imaging with SPHERE/IFS. Assessing the 
 Authors:  Kiefer, S. ; Bohn, A. J. ; Quanz, S. P. ; Kenworthy, M. ; Stolker, T.
 Text: We combine angular differnetial imaging (ADI) with spectral differential imaging (SDI) to investigate 3 different imaging techniques for spectral direct imaging: ASDI, SADI and CODI. Using SPHERE/IFS observations we test the techniques on Beta Pictoris b, 51 Eridani b and HR 8799 e. Our results show that combining SDI with ADI in general can help and that CODI achieves overall the best results.<br />
 <b>This paper marks the conclusion of my Master Thesis</b>
+
+Missing:
+	- Student project texts
+	- writing
+	- meme
+	- mfl

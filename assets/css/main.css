@@ -9,7 +9,7 @@ Adapted by xebobytes
  * @Date:   Thursday, April 28th 2022, 4:26:16 pm
  * @Filename: main.css
  * @Last modified by:
- * @Last modified time: Monday, August 8th 2022, 6:54:29 pm
+ * @Last modified time: Tuesday, August 9th 2022, 1:02:10 am
  */
 
 
@@ -112,9 +112,13 @@ body {
 body, input, select, textarea {
   color: var(--color-foreground-secondary);
   font-family: "Open Sans", sans-serif;
-  font-size: 14pt;
+  font-size: 16pt;
   font-weight: 400;
-  line-height: 1.65; }
+  line-height: 1.65;
+  }
+  @media screen and (max-width: 2150px){
+      body, input, select, textarea {
+        font-size: 14pt; } }
   @media screen and (max-width: 1680px) {
     body, input, select, textarea {
       font-size: 13pt; } }
@@ -2035,7 +2039,7 @@ button.collapsible {
   width: 100%; }
   #main > .inner {
     padding: 0 9em 0.1em 9em ;
-    margin: 0; /* TODO before: margin: 0, auto; */
+    margin: 0 auto;
     max-width: 110em; }
     #main > .inner > section {
       padding: 6em 0 4em 0 ;
@@ -2291,7 +2295,7 @@ nav {
     #banner .image img {
       height: 100%;
       /*max-height: 65vh;*/
-      max-height: 28rem;
+      /*max-height: 28rem;*/
       -moz-object-fit: cover;
       -webkit-object-fit: cover;
       -ms-object-fit: cover;
@@ -2301,6 +2305,11 @@ nav {
       -ms-object-position: 40% 25%; /* center */
       object-position: 40% 25%; /* center */
       margin: auto;/*width: 100%;*/ }
+
+  @media screen and (max-width: 2150px){
+    #banner .image {
+        max-height: 29rem; } }
+
   @media screen and (max-width: 1050px) /*(orientation: portrait)*/ {
     #banner {
       -moz-flex-direction: column-reverse;

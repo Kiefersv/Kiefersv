@@ -9,7 +9,7 @@ Adapted by xebobytes
  * @Date:   Thursday, April 28th 2022, 4:26:16 pm
  * @Filename: main.css
  * @Last modified by:
- * @Last modified time: Saturday, August 6th 2022, 5:44:40 pm
+ * @Last modified time: Monday, August 8th 2022, 6:54:29 pm
  */
 
 
@@ -2375,4 +2375,10 @@ nav {
 /* General Wrapper */
   .group-wrapper {
       margin: 0 0 3em 0;
+  }
+
+
+
+  cite {
+    font-style: italic;
   }

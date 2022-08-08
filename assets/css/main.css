@@ -9,7 +9,7 @@ Adapted by xebobytes
  * @Date:   Thursday, April 28th 2022, 4:26:16 pm
  * @Filename: main.css
  * @Last modified by:
- * @Last modified time: Tuesday, August 9th 2022, 1:02:10 am
+ * @Last modified time: Tuesday, August 9th 2022, 1:13:46 am
  */
 
 
@@ -2191,7 +2191,7 @@ nav {
             display: block;
             float: none;
             line-height: 1.6; /*4em;*/
-            margin: calc((100vh - 11em) / 10)  1.5em; /*1.5em;*/
+            margin: calc((100vh - 11em) / 12)  1.5em; /*1.5em;*/
         }
         nav ul li:first-child{
             margin-top: 11em; /* or 6em*/

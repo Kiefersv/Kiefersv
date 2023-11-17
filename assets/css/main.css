@@ -9,7 +9,7 @@ Adapted by xebobytes
  * @Date:   Thursday, April 28th 2022, 4:26:16 pm
  * @Filename: main.css
  * @Last modified by:
- * @Last modified time: Tuesday, August 9th 2022, 1:13:46 am
+ * @Last modified time: Friday, November 17th 2023, 3:49:52 pm
  */
 
 
@@ -2292,7 +2292,7 @@ nav {
     margin: -6em 0 2em 4em;
     padding: 0px 2%;    /* TODO kein padding*/
     width: 40%;}
-    #banner .image img {
+    #banner .image img, #banner .image video /*added video*/ {
       height: 100%;
       /*max-height: 65vh;*/
       /*max-height: 28rem;*/
@@ -2348,6 +2348,9 @@ nav {
   @media screen and (orientation: portrait) and (max-width: 480px) {
     #banner .image {
       max-height: 35vh; }
+    #banner .image video{ /*new*/
+        margin-top: 2em;
+    }
     /*#banner .image {
       margin-top: -4em;
     }*/

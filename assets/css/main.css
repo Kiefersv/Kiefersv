@@ -9,7 +9,7 @@ Adapted by xebobytes
  * @Date:   Thursday, April 28th 2022, 4:26:16 pm
  * @Filename: main.css
  * @Last modified by:
- * @Last modified time: Saturday, November 18th 2023, 3:08:23 pm
+ * @Last modified time: Saturday, November 18th 2023, 8:41:48 pm
  */
 
 
@@ -2354,21 +2354,32 @@ nav {
         -webkit-flex-shrink: 0;
         -ms-flex-shrink: 0;
         flex-shrink: 0;
-        margin: -4em 0 3em 0;
-        height: auto; /*25em;*/
+        margin: -4em 0 2em 0;
+        height: 100%; /*25em;*/
         /*max-height: 50vh;*/
-        min-height: 18em;
+        /*min-height: 18em;*/
         width: 100%;
     /*padding: 0px 15%;*/}
+
+    #banner .image video{
+      height: 400px;
+      /*width: 300px;*/
+      -moz-object-fit: contain;
+      -webkit-object-fit: contain;
+      -ms-object-fit: contain;
+      object-fit: contain;
+
+  }
     }
+
   @media screen and (orientation: portrait) and (max-width: 480px) {
     #banner .image {
     /*max-height: 39vh;*/ }
     #banner .image video{ /*new*/
         margin-top: 2em;
-        height: auto;
-        width: 100%;
-        object-fit: fill;
+        /*height: auto;*/
+        /*width: 100%;*/
+
         /*margin-left: -4em;*/
     }
     /*#banner .image {

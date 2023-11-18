@@ -9,7 +9,7 @@ Adapted by xebobytes
  * @Date:   Thursday, April 28th 2022, 4:26:16 pm
  * @Filename: main.css
  * @Last modified by:
- * @Last modified time: Friday, November 17th 2023, 4:35:12 pm
+ * @Last modified time: Saturday, November 18th 2023, 3:08:23 pm
  */
 
 
@@ -2290,9 +2290,9 @@ nav {
     flex-shrink: 0;
     display: block;
     margin: -6em 0 2em 4em;
-    padding: 0px 2%;    /* TODO kein padding*/
+    padding: 0px;
     width: 40%;}
-    #banner .image img /*added video*/ {
+    #banner .image img  {
       height: 100%;
       /*max-height: 65vh;*/
       /*max-height: 28rem;*/
@@ -2305,24 +2305,26 @@ nav {
       -ms-object-position: 40% 25%; /* center */
       object-position: 40% 25%; /* center */
       margin: auto;/*width: 100%;*/ }
-    #banner .image video{
-        height: 100%;
+    #banner .image video /*new*/{
+        /*height: 100%;*/
+        width: 100%;
         /*max-height: 65vh;*/
         /*max-height: 28rem;*/
-        -moz-object-fit: cover;
-        -webkit-object-fit: cover;
-        -ms-object-fit: cover;
-        object-fit: cover;
-        -moz-object-position: 40% 22%; /* center */
-        -webkit-object-position: 40% 22%; /* center */
-        -ms-object-position: 40% 22%; /* center */
-        object-position: 40% 22%; /* center */
-        margin: auto;/*width: 100%;*/ }
+        -moz-object-fit: none;
+        -webkit-object-fit: none;
+        -ms-object-fit: none;
+        object-fit: none;
+        -moz-object-position: center; /* 40% 22% */
+        -webkit-object-position: center; /* center */
+        -ms-object-position: center; /* center */
+        object-position: center; /* center */
+        /*margin: auto;*/
+        /*width: 100%;*/ }
     }
 
   @media screen and (max-width: 2150px){
     #banner .image {
-        max-height: 29rem; } }
+        /*max-height: 29rem;*/ } }
 
   @media screen and (max-width: 1050px) /*(orientation: portrait)*/ {
     #banner {
@@ -2352,19 +2354,22 @@ nav {
         -webkit-flex-shrink: 0;
         -ms-flex-shrink: 0;
         flex-shrink: 0;
-        margin: -4em 0 4em 0;
-        height: 25em;
+        margin: -4em 0 3em 0;
+        height: auto; /*25em;*/
         /*max-height: 50vh;*/
         min-height: 18em;
         width: 100%;
-        padding: 0px 15%;}
+    /*padding: 0px 15%;*/}
     }
   @media screen and (orientation: portrait) and (max-width: 480px) {
     #banner .image {
-      max-height: 39vh; }
+    /*max-height: 39vh;*/ }
     #banner .image video{ /*new*/
         margin-top: 2em;
-        margin-left: -4em;
+        height: auto;
+        width: 100%;
+        object-fit: fill;
+        /*margin-left: -4em;*/
     }
     /*#banner .image {
       margin-top: -4em;

@@ -3,7 +3,7 @@
  * @Date:   Thursday, June 16th 2022, 6:49:10 pm
  * @Filename: color-themes.css
  * @Last modified by:
- * @Last modified time: Saturday, August 6th 2022, 5:43:42 pm
+ * @Last modified time: Saturday, November 18th 2023, 10:35:57 pm
  */
 
  /*done up to line 1980*/
@@ -21,17 +21,17 @@
     --color-shadow: rgba(0, 0, 0, 0.175); /* only sidebar box-shadow */
 
 
-    --color-action-primary:   #3370cc; /* #1f4e93 #0047b3 #272778 z.B. button, focus in form, links etc.;#3f8cb4  #204578 rgba(79, 127, 248, 1); */
-    --color-action-lighter: #477ed1;    /* #0066ff #6c94f9 pagination */
+    --color-action-primary: #27559B; /* #3069C0  #3370cc   //   #1f4e93 #0047b3 #272778 z.B. button, focus in form, links etc.;#3f8cb4  #204578 rgba(79, 127, 248, 1); */
+    --color-action-lighter: #3069C0;    /* #477ed1 //  #0066ff #6c94f9 pagination */
     --color-action-light: #99b7e5; /*or #85a9e0*/
-    --color-action-darker: #2859a3;  /* or #2d64b7; old: #3b70f7  pagination */
+    --color-action-darker: #214883;  /*  #255193   #2859a3 //   #2d64b7; old: #3b70f7  pagination */
 
     --color-action-hover: rgba(51, 112, 204, 0.05); /* rgba(245, 106, 106, 0.05) button hover - lighter version of primary action color (most alpha) */
     --color-action-active: rgba(51, 112, 204, 0.15); /*  rgba(245, 106, 106, 0.15) button active - lighter version of primary action color (more alpha) */
 
-    --color-foreground-primary: #3d4449; /*h1-h4 */
-    --color-foreground-secondary: #63696d; /*body, input, select, textarea, radio/checkbox,      orig: #7f888f*/
-    --color-foreground-tertiary: #8a8e91; /* footer */
+    --color-foreground-primary: #353C40; /*h1-h4 #3d4449   */
+    --color-foreground-secondary: #444C50; /*body, input, select, textarea, radio/checkbox, #434343  #4B4B4B  #63696d   orig: #7f888f*/
+    --color-foreground-tertiary: #4D585B; /* footer #4F4F4F #595959 #626262  #8a8e91  */
 
 
     --color-block-border: rgba(210, 215, 217, 0.75); /* blockquote & code border, hr, borders in forms, border of box and list and other borders; also post background */

@@ -8,8 +8,8 @@ Adapted by xebobytes
 
  * @Date:   Thursday, April 28th 2022, 4:26:16 pm
  * @Filename: main.css
- * @Last modified by:
- * @Last modified time: Saturday, November 18th 2023, 8:41:48 pm
+ * @Last modified by:   
+ * @Last modified time: Sunday, November 19th 2023, 6:58:26 pm
  */
 
 
@@ -1204,13 +1204,18 @@ input[type="radio"] {
 
   /* Navigation: btn & checkbox (before) not showing */
   input[type="checkbox"] + label.checkbtn{
-      display: none;
+        display: none;
+      /*position: absolute;
+      left: -999px;*/
+
       font-size: 2em;
       line-height: 1em;
       padding-right: 0;
   }
   input[type="checkbox"] + label.checkbtn::before{
-      display: none;
+      /* display: none;*/
+      position: absolute;
+      left: -999px;
   }
 
 input[type="checkbox"] + label:before {
@@ -1272,7 +1277,9 @@ input[type="radio"] + label:before {
     font-family: 'Font Awesome 5 Free';
     font-weight: 400; }
   .icon > .label {
-    display: none;}
+  /*display: none;*/
+      position: absolute;
+      left: -999px;}
   .icon:before {
     line-height: inherit; }
   .icon.solid:before {
@@ -2164,7 +2171,9 @@ nav {
         z-index:999;
     }
     #nav-check {
-        display: none;
+        /*display: none;*/
+        position: absolute;
+        left: -999px;
     }
     .closing {
         transform: scale(0);

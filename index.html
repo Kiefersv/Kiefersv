@@ -50,14 +50,15 @@
                         </ul>
 
                         <!-- Navigation -->
-                        <nav id=nav>
+                        <nav id=nav aria-labelledby="mainmenulabel">
                             <input type="checkbox" id="nav-check">
                             <label for="nav-check" class="checkbtn">
                                 <i class="fas fa-plus closing"></i>
 								<i class="fas fa-bars opening"></i>
                             </label>
+							<span id="mainmenulabel" class="hidden">Main Menu</span>
                             <ul>
-                                <li><a class="active" href="index.html">Home</a></li>
+                                <li><a class="active" href="index.html" aria-current="page">Home</a></li>
                                 <li><a href="curriculum-vitae.html">Curriculum Vitae</a></li>
                                 <li><a href="research.html">Research</a></li>
                                 <li><a href="outreach-teaching.html">Teaching&nbsp;&amp; Outreach</a></li>

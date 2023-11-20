@@ -12,7 +12,7 @@
         <meta name="description" content="Sven Kiefer is a PhD candidate in astrophysics, currently focusing on cloud formations on exoplanets." /><!-- TODO -->
 
         <!-- Also in html5up -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> <!-- user-scalable??? -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="assets/css/font-theme-orig.css">
         <link rel="stylesheet" href="assets/css/color-theme-blue.css">
         <link rel="stylesheet" href="assets/css/main.css">
@@ -28,7 +28,7 @@
         <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 	</head>
 
-    <body class="is-preload" lang="en">
+    <body class="is-preload">
         <!-- Wrapper -->
       	<div id="wrapper">
 
@@ -37,28 +37,32 @@
 
                 <div class="inner">
 
+					<a class="skip-link" href="#h1">Skip navigation</a>
+
                     <!-- Header -->
                     <header id=header>
 
                         <!-- icons -->
                         <ul class="icons">
                             <li><a href="https://twitter.com/ExoSvenK" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                            <li><a href="https://github.com/Kiefersv" class="icon brands fa-github"><span class="label">Facebook</span></a></li>
-                            <li><a href="mailto:kiefersv.mail@gmail.com" class="icon far fa-envelope"><span class="label">Medium</span></a></li>
+                            <li><a href="https://github.com/Kiefersv" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                            <li><a href="mailto:kiefersv.mail@gmail.com" class="icon far fa-envelope"><span class="label">e-mail</span></a></li>
                         </ul>
 
                         <!-- Navigation -->
-                        <nav id=nav>
+                        <nav id=nav  aria-labelledby="mainmenulabel">
                             <input type="checkbox" id="nav-check">
                             <label for="nav-check" class="checkbtn">
                                 <i class="fas fa-plus closing"></i>
 								<i class="fas fa-bars opening"></i>
+								<span class="visually-hidden">Open/close main menu with space bar</span>
                             </label>
+							<span id="mainmenulabel" class="visually-hidden">Main Menu</span>
                             <ul>
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="curriculum-vitae.html">Curriculum Vitae</a></li>
                                 <li><a href="research.html">Research</a></li>
-                                <li><a class="active" href="outreach-teaching.html">Teaching&nbsp;&amp; Outreach</a></li>
+                                <li><a class="active" href="outreach-teaching.html" aria-current="page">Teaching&nbsp;&amp; Outreach</a></li>
                                 <li><a href="extracurricular-activities.html">Extra-Curricular</a></li>
                             </ul>
                         </nav>
@@ -67,7 +71,7 @@
 					<section>
 						<!-- TODO -->
 						<header class="main">
-							<h1>Teaching &amp; Outreach</h1>
+							<h1 id="h1">Teaching &amp; Outreach</h1>
 						</header>
 						<blockquote>"Gathering knowledge is only worth doing if you pass it on."</blockquote>
 
@@ -837,14 +841,13 @@
 					<footer id=footer>
 						<ul class="icons">
 							<li><a href="https://twitter.com/ExoSvenK" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://github.com/Kiefersv" class="icon brands fa-github"><span class="label">Facebook</span></a></li>
-							<li><a href="mailto:kiefersv.mail@gmail.com" class="icon far fa-envelope"><span class="label">Medium</span></a></li>
+							<li><a href="https://github.com/Kiefersv" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="mailto:kiefersv.mail@gmail.com" class="icon far fa-envelope"><span class="label">e-mail</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>Copyright &copy; 2022. All rights reserved.</li>
+							<li>Copyright &copy; 2023 Sven Kiefer. All rights reserved.</li>
 							<li>Design based on <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
-						<!-- alt: <small>&copy; Copyright {{currentYear}}, Example Corporation</small> -->
 					</footer>
 
 				</div>

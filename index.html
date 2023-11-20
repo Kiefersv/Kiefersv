@@ -30,7 +30,7 @@
         <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 	</head>
 
-    <body class="is-preload" lang="en">
+    <body class="is-preload">
         <!-- Wrapper -->
       	<div id="wrapper">
 
@@ -39,14 +39,16 @@
 
                 <div class="inner">
 
+					<a class="skip-link" href="#h1">Skip navigation</a>
+
                     <!-- Header -->
                     <header id=header>
 
                         <!-- icons -->
                         <ul class="icons">
                             <li><a href="https://twitter.com/ExoSvenK" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                            <li><a href="https://github.com/Kiefersv" class="icon brands fa-github"><span class="label">Facebook</span></a></li>
-                            <li><a href="mailto:kiefersv.mail@gmail.com" class="icon far fa-envelope"><span class="label">Medium</span></a></li>
+                            <li><a href="https://github.com/Kiefersv" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                            <li><a href="mailto:kiefersv.mail@gmail.com" class="icon far fa-envelope"><span class="label">e-mail</span></a></li>
                         </ul>
 
                         <!-- Navigation -->
@@ -55,8 +57,9 @@
 							<label for="nav-check" class="checkbtn">
                                 <i class="fas fa-plus closing"></i>
 								<i class="fas fa-bars opening"></i>
+								<span class="visually-hidden">Open/close main menu with space bar</span>
                             </label>
-							<span id="mainmenulabel" class="hidden">Main Menu</span>
+							<span id="mainmenulabel" class="visually-hidden">Main Menu</span>
                             <ul>
                                 <li><a class="active" href="index.html" aria-current="page">Home</a></li>
                                 <li><a href="curriculum-vitae.html">Curriculum Vitae</a></li>
@@ -72,7 +75,7 @@
                     <section id="banner">
                         <div class="content">
                             <header>
-                                <h1>Hi, I'm Sven Kiefer, a&nbsp;PhD candidate in astrophysics.</h1>
+                                <h1 id="h1">Hi, I'm Sven Kiefer, a&nbsp;PhD candidate in astrophysics.</h1>
                             </header>
 							<!--
                             <p>Welcome to the fascinating field of exoplanets! While I focused more on the observational aspect of exoplanet science during my Bachelor and Masters – using a 0.5m telescope or testing the performance of differential imaging techniques by implementing IFS to <a href=" https://pynpoint.readthedocs.io/en/latest/">PynPoint</a> – I am now implementing models to study cloud formation in 3D exoplanet atmospheres. I want to deepen our under&shy;standing of how clouds form on exoplanets and how they affect the planets' chemistry and climate. To this end, I implement kinetic cloud formation in general circulation models (GCMs) and analyse their feed&shy;back to the chemistry and the climate.</p>
@@ -94,7 +97,7 @@
                     <section>
 						<!-- TODO -->
                         <header class="major">
-                            <h2 class="hidden">In A Nutshell &ndash; Overview of subpages with teaser</h2>
+                            <h2 class="visually-hidden">In A Nutshell &ndash; Overview of subpages with teaser</h2>
                         </header>
 
                         <div class="features">
@@ -106,7 +109,7 @@
 									<!--
                                     <p>I'm Sven Kiefer, a PhD candidate in astrophysics at <a href="https://www.kuleuven.be/lang/de" target="_blank">KU Leuven</a>, <a href="https://www.oeaw.ac.at/en/iwf/home" target="_blank">IWF</a> and <a href="https://www.tugraz.at/home/" target="_blank">TU Graz</a> as part of the <a href="https://chameleon.iwf.oeaw.ac.at/" target="_blank">CHAMELEON</a> Marie Currie Innovative Training Network for European Joint Doctorates.<br />Get in Touch!<br /><a href="mailto:kiefersv.mail@gmail.com">kiefersv.mail@gmail.com</a><br />Celestijnenlaan 200d, 3001&nbsp;Leuven, Belgium</p>
 									-->
-                                    <p>I'm Sven Kiefer, a PhD candidate in astrophysics at <a href="https://www.kuleuven.be/lang/de" target="_blank">KU Leuven</a>, <a href="https://www.oeaw.ac.at/en/iwf/home" target="_blank">IWF</a> and <a href="https://www.tugraz.at/home/" target="_blank">TU Graz</a> as part of the <a href="https://chameleon.iwf.oeaw.ac.at/" target="_blank">CHAMELEON</a> Marie Currie Innovative Training Network for European Joint Doctorates.<br />Get in Touch: <a href="mailto:kiefersv.mail@gmail.com">kiefersv.mail@gmail.com</a></p>
+                                    <p>I'm Sven Kiefer, a PhD candidate in astrophysics at <a href="https://www.kuleuven.be/lang/de" target="_blank">KU Leuven</a>, <a href="https://www.oeaw.ac.at/en/iwf/home" target="_blank">IWF</a> and <a href="https://www.tugraz.at/home/" target="_blank">TU Graz</a> as part of the <a href="https://chameleon.iwf.oeaw.ac.at/" target="_blank">CHAMELEON</a> Marie Curie Innovative Training Network for European Joint Doctorates.<br />Get in Touch: <a href="mailto:kiefersv.mail@gmail.com">kiefersv.mail@gmail.com</a></p>
                                 </div>
                             </article>
 							<!--
@@ -123,7 +126,7 @@
 									<!--
                                     <p> I study cloud formation on 3D exoplanet atmospheres by implementing cloud formation into the global circulation model <a href="https://mitgcm.readthedocs.io/en/latest/" target="_blank">MITgcm</a>. I hope to understand how clouds form in different types of exoplanets, how they affect the gas phase chemistry and how the clouds' opacities impact the climate of exoplanets. Check out my latest  <a href="research.html">publications and research projects</a>.</p>
 									-->
-                                    <p> I study clouds on 3D exoplanet atmospheres by implementing cloud formation into the global circulation model <a href="https://mitgcm.readthedocs.io/en/latest/" target="_blank">MITgcm</a>. I hope to understand how clouds affect the chemistry and climate of exoplanet atmospheres. Check out my latest <a href="research.html#publications">publications and research projects</a>.</p>
+                                    <p> I study clouds on 3D exoplanet atmospheres by implementing cloud formation into the global circulation model <a href="https://mitgcm.readthedocs.io/en/latest/" target="_blank">MITgcm</a>. My goal is to understand how clouds affect the chemistry and climate of exoplanet atmospheres. Check out my latest <a href="research.html#publications">publications and research projects</a>.</p>
                                 </div>
                             </article>
                             <article>
@@ -133,7 +136,7 @@
 									<!--
                                     <p>Seeking knowledge is important but passing it on to the next generation is even more so. Therefore, I'm taking active part in teaching by supervising lab sessions, Bachelor theses and Master theses. Outside of university, I take active part in <a href="outreach-teaching.html">outreach activities</a> by giving talks and organising educational events.</p>
 									-->
-                                    <p>I'm taking active part in teaching by supervising lab sessions, Bachelor theses and Master theses. Outside of university, I organise and take part in <a href="outreach-teaching.html">outreach activities</a> by giving talks and organising educational events.</p>
+                                    <p>I'm taking active part in teaching by supervising lab sessions, bachelor theses and master theses. Outside of university, I organise and take part in <a href="outreach-teaching.html">outreach activities</a> by giving talks and organising educational events.</p>
                                 </div>
                             </article>
                             <article>
@@ -149,7 +152,7 @@
                     <!-- Images 9x9 -->
                     <section>
                         <header class="major">
-                            <h2 class ="hidden">Collection of Images</h2> <!-- TODO -->
+                            <h2 class ="visually-hidden">Collection of Images</h2> <!-- TODO -->
                         </header>
                         <div class="box alt">
                             <div class="row gtr-50 gtr-uniform">
@@ -171,8 +174,8 @@
                     <footer id=footer>
 						<ul class="icons">
                             <li><a href="https://twitter.com/ExoSvenK" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                            <li><a href="https://github.com/Kiefersv" class="icon brands fa-github"><span class="label">Facebook</span></a></li>
-                            <li><a href="mailto:kiefersv.mail@gmail.com" class="icon far fa-envelope"><span class="label">Medium</span></a></li>
+                            <li><a href="https://github.com/Kiefersv" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                            <li><a href="mailto:kiefersv.mail@gmail.com" class="icon far fa-envelope"><span class="label">e-mail</span></a></li>
                         </ul>
                         <ul class="copyright">
                             <li>Copyright &copy; 2023 Sven Kiefer. All rights reserved.</li>

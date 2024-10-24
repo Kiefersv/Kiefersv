@@ -74,15 +74,10 @@
 							<h1 id="h1">Research</h1>
 						</header>
 
-						<p> Exoplanets exhibit a fascinating diversity: from small, rocky worlds to giant gaseous planets.
-								We are only beginning to understand their formation, atmospheres and climates, but we already have to admit that
-								the galaxy harbors much more diversity than we know from our own solar system. <!-- TODO txt -->
-								<br /><br />
-								With my work, I want to deepen our understanding of exoplanet atmospheres. I'm especially interested in cloud
-								formation, the interaction between gas phase and cloud chemistry, and the impact of clouds on the climate of exoplanets.
-								To combine clouds and climate, I use the global circulation model (GCM)
-								<a href="https://mitgcm.readthedocs.io/en/latest/" target="_blank">MITgcm</a> which I combine with disequilibrium
-								chemistry and kinetic nucleation.</p>
+						<p> Exoplanets exhibit a fascinating diversity: from small, rocky worlds to giant, gaseous planets.
+								We are only beginning to understand their formation, atmospheres, and climates, but we already have to admit that
+								the galaxy harbors much more diversity than we know from our own solar system.	With my work, I want to deepen our understanding of exoplanet atmospheres. I'm especially interested in cloud
+								formation, disequilibrium chemistry, and the climate of exoplanets.
 
 
 					</section>
@@ -90,6 +85,27 @@
 					<section>
 						<div>
 							<h2 id="publications">First author publications</h2>
+							<button class="collapsible">
+								2024 &nbsp;|&nbsp; <strong>Under the magnifying glass: A combined 3D model applied to cloudy warm Saturn type exoplanets around M-dwarfs</strong>
+								<br /><i><b>S. Kiefer</b>, N. Bach-M&oslash;ller, D.Samra, D. A. Lewis, A. D. Schneider, F. Amadio, H. Lecoq-Molinos, L. Carone, L. Decin, U. G. J&oslash;rgensen, Ch. Helling</i>
+								<!-- <br /><a href="https://www.aanda.org/articles/aa/abs/2024/10/aa50526-24/aa50526-24.html" target="_blank">&nearr;&nbsp;Publisher</a>&nbsp; &nbsp; <a href="https://arxiv.org/pdf/2409.01121" target="_blank">&darr;&nbsp;Download</a> -->
+								<br /><a href="https://arxiv.org/pdf/2410.17716" target="_blank">&darr;&nbsp;Download</a>
+							</button>
+							<div class="collapsible-content">
+								<div class="row gtr-200">
+									<div class="col-8 col-12-large">
+										<p>  Warm Saturn type exoplanets orbiting M-dwarfs are particularly suitable for in-depth cloud characterisation through transmission spectroscopy due to their favourable stellar to planetary radius contrast. However, modelling cloud formation consistently within the 3D atmosphere remains computationally challenging. The aim is to explore the combined atmospheric and micro-physical cloud structure, and the kinetic gas-phase chemistry for the warm Saturn HATS0-6b orbiting an M-dwarf. A combined 3D cloudy atmosphere model is constructed by iteratively executing the 3D General Circulation Model (GCM) expeRT/MITgcm and a kinetic cloud formation model, each in its full complexity. Resulting cloud particle number densities, sizes, and compositions are used to derive the local cloud opacity which is then utilised in the next GCM iteration. The disequilibrium H/C/O/N gas-phase chemistry is calculated for each iteration to assess the resulting transmission spectrum in post-processing. The cloud opacity feedback causes a temperature inversion at the sub-stellar point and at the evening terminator at gas pressures higher than 0.01 bar. Furthermore, clouds cool the atmosphere between 0.01 bar and 10 bar, and narrow the equatorial wind jet. The transmission spectrum shows muted gas-phase absorption and a cloud particle silicate feature at approximately 10 micron. The combined atmosphere-cloud model retains the full physical complexity of each component and therefore enables a detailed physical interpretation with JWST NIRSpec and MIRI LRS observational accuracy. The model shows that warm Saturn type exoplanets around M-dwarfs are ideal candidates to search for limb asymmetries in clouds and chemistry, identify cloud particle composition by observing their spectral features, and identify the cloud-induced strong thermal inversion that arises on these planets specifically.
+										</p>
+									</div>
+									<div class="col-4 col-12-large">
+											<span class="image fit">
+												<a class="img">
+													<img src="IMG/research/hats-6b.jpg" alt="Climate simulations of HATS-6b."/>
+												</a>
+											</span>
+									</div>
+								</div>
+							</div>
 							<button class="collapsible">
 								2024 &nbsp;|&nbsp; <strong>Why heterogeneous cloud particles matter: Iron-bearing species and cloud particle morphology affects exoplanet transmission spectra</strong>
 								<br /><i><b>S. Kiefer</b>, D.Samra, D. A. Lewis, A. D. Schneider, M. Min, L. Carone, L. Decin, Ch. Helling</i>
@@ -840,23 +856,30 @@
 						<div class="row"> <!-- or class="row gtr-200" as used with col-6 col-12-medium  for more space between columns-->
 							<!-- Break -->
 							<div class="col-6 col-12-large">
-								<h3>GCMtoolKit</h3>
-								<p><span class="image left"><img src="IMG/research/GCMT_logo.png" alt="GCMtoolkit logo" /></span></p>
-								<p> Aaron Schneider, Robin Bayens, and I started developing
-									<a href="https://github.com/exorad/GCMtools" target="_blank">GCMtoolKit</a> to simplify working with
-									global circulation model (GCM) data. This library should allow to easily perform data handling,<!-- TODO txt -->
-									data manipulation, and plotting of GCM output. Starting from MITgcm, the goal is to
-									support multiple GCMs, making the library a universal tool for the GCM community.<br />Are you also working with a GCM and would like to add it to our library? Please feel free to <a href="mailto:kiefersv.mail@gmail.com">get in touch</a> with us so that
-									you too can profit from GCMtoolKit. </p>
+								<h3>Cloud formation in 3D exoplanet atmospheres</h3>
+								<p>
+									<a href="docs/thesis/thesis_Sven_Kiefer.pdf" target="_blank" class="img">
+									<span class="image left"><img src="IMG/research/phd_title.jpg" alt="Title page of Sven Kiefer's phd thesis." /></span></p>
+								 </a>
+								<p>During my PhD I tackled the detailed interaction of clouds with their enviroments. Starting with a general
+									introduction to exoplanets, my thesis details
+									how the chemistry, cloud formation, and climate of exoplanets can be predicted. From there, the effect
+								  of thermal and chemical non-equilibria on cloud formation is studied as well as the optical properties
+								  of mixed cloud particles. Lastly, the climate of HATS-6b is studied in great detail to learn how clouds
+								  affect the climate of warm Saturns. The most important takeaway from this work: clouds matter and will
+									shape the atmosphere of exoplanets. I hope you enjoy following my research
+									by reading <a href="docs/thesis/thesis_Sven_Kiefer.pdf" target="_blank">my PhD thesis</a>,
+									by revisiting <a href="docs/pres/public_phd_defense.pdf" target="_blank">my public defense slides</a>,
+									or by <a href="https://www.youtube.com/watch?v=_Nn0hEaCjws" target="_blank">watching me present my work</a>.</p>
 							</div>
 							<div class="col-6 col-12-large">
 								<h3>Spectral characterization of companions around Young Suns (Master Thesis)</h3>
 								<p>
-									<a href="docs/MSC_Sven_Kiefer.pdf" target="_blank" class="img">
+									<a href="docs/thesis/MSC_Sven_Kiefer.pdf" target="_blank" class="img">
 										<span class="image left"><img src="IMG/research/51eridani.jpg" alt="Processed direct imaging data of 51 Eridani b." /></span></p>
 									</a>
 								<p> Even though direct imaging detection only gave us a handful of planets, they are crucial to study exoplanet<!-- TODO txt -->
-									characteristics. For my <a href="docs/MSC_Sven_Kiefer.pdf" target="_blank">Master Thesis</a>, I collaborated with
+									characteristics. For my <a href="docs/thesis/MSC_Sven_Kiefer.pdf" target="_blank">Master Thesis</a>, I collaborated with
 									the Leiden Observatory which hosted me for half a
 									year. The aim was to utilise the spectral information available within
 									SPHERE/IFS observation to improve the quality of direct imaging. To this end, we tested and implemented 4
@@ -866,9 +889,11 @@
 							</div>
 							<div class="col-6 col-12-large">
 								<h3>Implementation and Improvement of an MCP anode (Semester Project)</h3>
-								<p><span class="image left"><img src="IMG/research/mcp_annode.jpeg" alt="MCP anode which was tested by Sven Kiefer during his semester project." /></span></p>
+									<a href="docs/thesis/PSA_Report.pdf" target="_blank" class="img">
+								  <p><span class="image left"><img src="IMG/research/mcp_annode.jpeg" alt="MCP anode which was tested by Sven Kiefer during his semester project." /></span></p>
+								</a>
 								<p> Measuring fundamental particles is no easy task. Previous to this work, an MCP anode had been designed to
-									detect the number and position of positrons. <a href="docs/PSA_Report.pdf" target="_blank">In this project</a>, we tested the and in 3 different set ups. These
+									detect the number and position of positrons. <a href="docs/thesis/PSA_Report.pdf" target="_blank">In this project</a>, we tested the and in 3 different set ups. These
 									tests showed a critical design flaw in the anode. The currents within the anode after a positron
 									impact can damage the thin carbon layer of the anode. To prepare future improvements of the anode, we performed
 									simulations to calculate the maximum currents that can occur within the anode. The simulations also showed that
@@ -877,8 +902,10 @@
 							</div>
 							<div class="col-6 col-12-large">
 								<h3>To Measure a Transit with a 0.5m Telescope (Semester Project)</h3>
+								<a href="docs/thesis/Tranist_Thesis_Sven_Kiefer.pdf" target="_blank" class="img">
 								<p><span class="image left"><img src="IMG/research/TRES3B_predict.jpg" alt="Transit curve of TrEs-3 b measured by Sven Kiefer during his Bachelor thesis." /></span></p>
-								<p> Every astronomer living in a big city knows the frustration of starless skies. <a href="docs/Tranist_Thesis_Sven_Kiefer.pdf" target="_blank">In this project</a>,
+							  </a>
+								<p> Every astronomer living in a big city knows the frustration of starless skies. <a href="docs/thesis/Tranist_Thesis_Sven_Kiefer.pdf" target="_blank">In this project</a>,
 								    we aimed to determine whether an exoplanetary transit
 								    can be measured in the middle of Zurich with the 0.5m Telescope at Hoengerberg.
 									Collaborating with Adrian Gheorghe, we developed Python routines to accurately measure the brightness of stars.
@@ -888,8 +915,25 @@
 								</p>
 							</div>
 						</div>
+					  </section>
 
-					</section>
+						<section>
+
+							<h2 id="projects">Open source software</h2>
+							<div class="row"> <!-- or class="row gtr-200" as used with col-6 col-12-medium  for more space between columns-->
+								<!-- Break -->
+								<div class="col-6 col-12-large">
+									<h3>GCMtoolKit</h3>
+									<p><span class="image left"><img src="IMG/research/GCMT_logo.png" alt="GCMtoolkit logo" /></span></p>
+									<p> Aaron Schneider, Robin Bayens, and I started developing
+										<a href="https://github.com/exorad/GCMtools" target="_blank">GCMtoolKit</a> to simplify working with
+										global circulation model (GCM) data. This library should allow to easily perform data handling,<!-- TODO txt -->
+										data manipulation, and plotting of GCM output. Starting from MITgcm, the goal is to
+										support multiple GCMs, making the library a universal tool for the GCM community.<br />Are you also working with a GCM and would like to add it to our library? Please feel free to <a href="mailto:kiefersv.mail@gmail.com">get in touch</a> with us so that
+										you too can profit from GCMtoolKit. </p>
+								</div>
+
+				  	</section>
 
 					<footer id=footer>
 						<ul class="icons">
